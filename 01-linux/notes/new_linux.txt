@@ -1,0 +1,108 @@
+New linux stuff:
+
+To change shell:
+sudo chsh -s $(which zsh) $(whoami)
+(change zsh for shell of choice i.e bash)
+
+
+Weird names:
+use "" >> ("hello world") for file or directory names with spaces
+OR
+use \ >> (hello\ world) for each space
+
+use ./ >> (./-file) for file starts with -
+
+
+rmdir:
+rmdir for empty directory
+rm -r for directory with files
+
+
+Create files:
+touch - create or update timestamp
+echo - create file with text or write to file (> new file, >> append to existing)
+
+
+cat:
+can be used to combine files or append one file to another (> new file, >> append to existing)
+
+
+Users:
+sudo useradd "USER" - create new user
+sudo passwd "USER" - create password for new user
+sudo usermod -aG sudo "USER" - add new user to sudoers
+sudo deluser "USER" sudo - revoke sudo access
+
+sudo groupadd "GROUP" - create new group
+sudo groupdel "GROUP" - delete group
+sudo usermod -aG "GROUP" "USER" - add new user to new group
+sudo gpasswd -d "USER" "GROUP" - remove user from group
+
+groups - check which groups current user is in
+
+
+File perms:
+d - directory
+
+r - read (4)
+w - write (2)
+x - execute (1)
+- - no perms (0)
+
+1st - user rights (u)
+2nd - group rights (g)
+3rd - other (public) rights (o)
+
+each 3 sets can be represented as numbers in binary 0-7
+full perms for everyone = 777
+
+chmod xxx "FILE" - to change perms of file to octal value of xxx
+chmod u+rwx,g-rwx,o=rwx "FILE" - using symbolic syntax to add, remove or set perms
+
+sudo chown "FILE" - change owner of file
+sudo chgrp "FILE" - change group of file
+sudo chown "USER":"GROUP" "FILE" - change owner and group of file
+use -R for whole directory
+
+
+Redirect error and output:
+after command use:
+2> "FILE" - redirects stderr to file
+&> "FILE" - redirects stdout and stderr to file
+/dev/null - direct to here to discards stderr and/or stdout
+
+| - pipe redirects previous command stdout to be next commands stdin i.e "head file.txt | tail -n 5" (gives last five lines of first 10 lines so lines 6-10)
+
+
+Env variables ($):
+PATH - dir where system looks for executables 
+HOME - current users home dir
+USER - current users username
+SHELL - shell program in use
+
+export - to set env variable to new thing (export PATH=/user/home/donkey)
+export PATH=$PATH:/newfilepath - to add new filepath to already existing filepaths
+
+
+Aliases:
+alias "ALIAS"='COMMAND' - whenever ALIAS is typed COMMAND is run
+add this line to .zshrc or .bashrc to make permanent
+
+
+History:
+history - outputs command run from this session
+!number - to rerun that command from this session history
+ctrl + r - reverse search for previous run command keep pressing to bring up previous
+ctrl + j - insert command from reverse search without executing
+
+
+Other commands (from overthewire 1-10):
+strings - outputs readable text
+find - can specify -user, -group, -size (filesize) and more, to find files
+sort - outputs alphabetically sorted file contents
+uniq - outputs one of each line removing duplicates
+uniq -u - outputs only unique lines when comparing to its adjacent lines
+
+
+Other commands (from overthewire 11-20):
+
