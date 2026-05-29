@@ -216,8 +216,7 @@ dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 
 ### Challenges & lessons learnt
 
-command searches through data.txt for line with millionth and print full line including password)
-copy password
+command searches through data.txt for line with millionth and prints full line including password
 
 ----------------------------------------------------------------------------------------
 # Level: 9:
@@ -236,11 +235,12 @@ sort data.txt | uniq -u
 
 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 
-("sort" outputs alphabetically sorted file contents)
-("uniq" outputs one of each line removing duplicates)
-("uniq" -u outputs only unique lines when comparing to its adjacent lines)
-(using pipe symbol (|) to pass output from "sort data.txt" as input to uniq -u put all duplicates next to each other then outputs only the unique line = password)
-copy password
+### Challenges & lessons learnt
+
+"sort" outputs alphabetically sorted file contents
+"uniq" outputs one of each line removing duplicates
+"uniq -u" outputs only unique lines when comparing to its adjacent lines
+using pipe symbol "|" to pass output (stdout) from "sort data.txt" as input (stdin) to uniq -u, this puts all duplicates next to each other then outputs only the unique line = password
 
 ----------------------------------------------------------------------------------------
 # Level: 10:
@@ -259,9 +259,10 @@ strings data.txt | grep ==
 
 FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
 
-("strings" outputs all readable strings from file)
-("grep ==" outputs lines with multiple =, password is there)
-copy password
+### Challenges & lessons learnt
+
+"strings" outputs all readable strings from file
+"grep ==" outputs lines with multiple =, password is there
 
 ----------------------------------------------------------------------------------------
 # Level: 11:
