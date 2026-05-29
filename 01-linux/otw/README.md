@@ -29,13 +29,10 @@ What was the goal?
 
 (password for next level)
 
-## Challenges
+## Challenges & lessons learnt
 
 Any issues you hit and how you solved them.
 
-## What I Learned
-
-Key takeaways from this level.
 ```
 
 ## Completed Levels
