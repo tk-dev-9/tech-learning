@@ -21,9 +21,8 @@ What was the goal?
 
 ## Commands Used
 
-```
-(the commands you ran)
-```
+
+`(the commands you ran)`
 
 ## Password
 
