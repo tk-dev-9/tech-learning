@@ -10,7 +10,7 @@ Documentation of completed overthewire game bandit levels, inlcuding:
 
 ## Template
 
-When documenting a lab, include:
+When documenting a level, include:
 
 ```markdown
 # Level: [Level number]
@@ -21,7 +21,9 @@ What was the goal?
 
 ## Commands Used
 
+'''
 (the commands you ran)
+'''
 
 ## Password
 
