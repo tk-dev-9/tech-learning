@@ -237,10 +237,10 @@ sort data.txt | uniq -u
 
 ### Challenges & lessons learnt
 
-"sort" outputs alphabetically sorted file contents
-"uniq" outputs one of each line removing duplicates
-"uniq -u" outputs only unique lines when comparing to its adjacent lines
-using pipe symbol "|" to pass output (stdout) from "sort data.txt" as input (stdin) to uniq -u, this puts all duplicates next to each other then outputs only the unique line = password
+**sort** outputs alphabetically sorted file contents
+**uniq** outputs one of each line removing duplicates
+**uniq -u** outputs only unique lines when comparing to its adjacent lines
+using pipe symbol **|** to pass output (stdout) from **sort data.txt** as input (stdin) to uniq -u, this puts all duplicates next to each other then outputs only the unique line = password
 
 ----------------------------------------------------------------------------------------
 # Level: 10:
@@ -261,8 +261,8 @@ FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
 
 ### Challenges & lessons learnt
 
-"strings" outputs all readable strings from file
-"grep ==" outputs lines with multiple =, password is there
+**strings** outputs all readable strings from file
+**grep ==** outputs lines with multiple =, password is there
 
 ----------------------------------------------------------------------------------------
 # Level: 11:
