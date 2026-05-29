@@ -1,36 +1,25 @@
-# Labs
+# SadServers
 
-Document your completed labs here.
+Documentation of completed SadServers tasks here
 
 ## Template
 
-When documenting a lab, include:
+When documenting a task, include:
 
-```markdown
-# Lab: [Lab Name]
-
-## Objective
-
-What was the goal?
-
-## Commands Used
-
-(the commands you ran)
-
-## Output
-
-(what happened)
-
-## Challenges
-
-Any issues you hit and how you solved them.
-
-## What I Learned
-
-Key takeaways from this lab.
 ```
+# Task: [Task Name]
 
-## Completed Labs
+## Problem
 
-- [ ] Add your first lab
+Why is the server sad? :(
+
+## Solution
+
+How I made the server happy. :)
+
+Including: 
+- commands used
+- challenges
+- lessons learnt
+```
 
